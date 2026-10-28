@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
 
-const KUNCI_STORAAGE = 'uts-paw:k7'
+const KUNCI_STORAGE = 'uts-paw:k7'
 
 export async function muatKoleksiK7() {
-    const respons = await fetch('${import.meta.env.BASE_URL}data/koleksi.json')
+    const respons = await fetch(`${import.meta.env.BASE_URL}data/koleksi.json`)
     if (!respons.ok) {
         throw new Error('Gagal memuat koleksi')
     }
@@ -17,7 +17,7 @@ export default function useKoleksi() {
     useEffect(() => {
         async function ambilKoleksi() {
             try {
-                const dataLokal = localStorage.getItem(KUNCI_STORAAGE)
+                const dataLokal = localStorage.getItem(KUNCI_STORAGE)
                 if (dataLokal) {
                     setItems(JSON.parse(dataLokal))
                     setLoading(false)
@@ -25,7 +25,7 @@ export default function useKoleksi() {
                 }
 
                 const dataAwal = await muatKoleksiK7()
-                localStorage.setItem(KUNCI_STORAAGE, JSON.stringify(dataAwal))
+                localStorage.setItem(KUNCI_STORAGE, JSON.stringify(dataAwal))
 
                 setItems(dataAwal)
             }
@@ -38,6 +38,6 @@ export default function useKoleksi() {
             }
         }
         ambilKoleksi()
-    })
+    }, [])
     return { items, loading }
 }
