@@ -1,10 +1,91 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "2",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "3",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "4",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "5",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "6",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "7",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "8",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "9",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
+  }
+
+  {
+    "id": "10",
+    "judul": "",
+    "kategori": "",
+    "alamat": "ganti sesuai field tema",
+    "hargaRataRata": 0,
+    "jamBuka": "ganti sesuai field tema"
   }
 ]
