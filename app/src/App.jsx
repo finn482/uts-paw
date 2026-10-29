@@ -4,7 +4,7 @@ import Koleksi from './pages/Koleksi.jsx'
 import Detail from './pages/Detail.jsx'
 import Tambah from './pages/Tambah.jsx'
 import Statistik from './pages/Statistik.jsx'
-import Tentang from './pages/tentang.jsx'
+import Tentang from './pages/Tentang.jsx'
 import TidakDitemukan from './pages/TidakDitemukan.jsx'
 
 export default function App() {
