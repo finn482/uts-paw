@@ -1,91 +1,82 @@
 [
   {
     "id": "1",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "YASAKA Fried Chicken & Geprek ITERA",
+    "kategori": "Ayam",
+    "alamat": "Jl. Lapas Raya No. 1",
+    "hargaRataRata": 10000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "2",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Warung Makan Padang Ampera ITERA",
+    "kategori": "Nasi",
+    "alamat": "Jl. Kaswari No. 2",
+    "hargaRataRata": 12000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "3",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Sabana ITERA",
+    "kategori": "Ayam",
+    "alamat": "Jl. Ryacudu No. 3",
+    "hargaRataRata": 12000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "4",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Warung Makan Apik ITERA",
+    "kategori": "Nasi",
+    "alamat": "Jl. Terusan Ryacudu No. 4",
+    "hargaRataRata": 15000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "5",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Geprek Bakar Lampung",
+    "kategori": "Ayam",
+    "alamat": "Jl. Terusan Ryacudu No. 5",
+    "hargaRataRata": 10000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "6",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Warung Makan Bu Ilsha",
+    "kategori": "Nasi",
+    "alamat": "Jl. Kaswari No. 6",
+    "hargaRataRata": 10000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "7",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Kantin RK ITERA",
+    "kategori": "Nasi",
+    "alamat": "Jl. Terusan Ryacudu No 7",
+    "hargaRataRata": 20000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "8",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Warung Arra",
+    "kategori": "Mi",
+    "alamat": "Jl. Lapas Raya No. 8",
+    "hargaRataRata": 12000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "9",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
-  }
-
+    "judul": "Warung Ikan Bakar Desa",
+    "kategori": "Ayam",
+    "alamat": "Jl. Lapas Raya No. 9",
+    "hargaRataRata": 15000,
+    "jamBuka": "10.00-21.00"
+  },
   {
     "id": "10",
-    "judul": "",
-    "kategori": "",
-    "alamat": "ganti sesuai field tema",
-    "hargaRataRata": 0,
-    "jamBuka": "ganti sesuai field tema"
+    "judul": "Warung Ayam Bakar Subang",
+    "kategori": "Ayam",
+    "alamat": "Jl. Terusan Ryacudu No. 10",
+    "hargaRataRata": 10000,
+    "jamBuka": "10.00-21.00"
   }
 ]
