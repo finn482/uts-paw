@@ -1,44 +1,43 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import useKoleksi from "../hooks/useKoleksi.js";
+import { useState } from 'react'
+import useKoleksi from '../hooks/useKoleksi.js'
+import KotakPencarian from '../components/KotakPencarian.jsx'
+import KartuItem from '../components/KartuItem.jsx'
 
 export default function Koleksi() {
-    const { items, loading } = useKoleksi();
-    const [kataKunci, setKataKunci] = useState("");
+  const { items, loading, error } = useKoleksi()
+  const [cari, setCari] = useState('')
+  const [kategori, setKategori] = useState('Semua')
 
-    const hasilPencarian = items.filter((item) =>
-        item.judul.toLowerCase().includes(kataKunci.toLowerCase())
-    );
+  if (loading) return <p>Memuat data...</p>
+  if (error) return <p role="alert">Gagal memuat: {error}</p>
 
-    return (
-        <section>
-            <h1>Daftar Kuliner</h1>
+  const daftarKategori = ['Semua', ...new Set(items.map((item) => item.kategori))]
+  const tampil = items.filter(
+    (item) =>
+      item.judul.toLowerCase().includes(cari.toLowerCase()) &&
+      (kategori === 'Semua' || item.kategori === kategori),
+  )
 
-            <label htmlFor="Pencarian">Cari berdasarkan judul</label>
-            <input
-                id="Pencarian"
-                type="search"
-                value={kataKunci}
-                onChange={(event) => setKataKunci(event.target.value)}
-                placeholder="Cari kuliner..."
-            />
-
-            {loading && <p>Memuat data...</p>}
-            {!loading && hasilPencarian.length === 0 && (
-                <p>Tidak ada kuliner yang ditemukan</p>
-            )}
-
-            <ul>
-                {hasilPencarian.map((item) => (
-                    <li key={item.id}>
-                        <h2>{item.judul}</h2>
-                        <p>Kategori: {item.kategori}</p>
-                        <Link to={`/koleksi/${item.id}`}>Lihat detail</Link>
-                    </li>
-                ))}
-            </ul>
-
-            <Link to="/">Kembali ke beranda</Link>
-        </section>
-    )
+  return (
+    <section>
+      <h1>Koleksi</h1>
+      <div className="alat-koleksi">
+        <KotakPencarian nilai={cari} onUbah={setCari} />
+        <select aria-label="Kategori" value={kategori} onChange={(e) => setKategori(e.target.value)}>
+          {daftarKategori.map((k) => (
+            <option key={k}>{k}</option>
+          ))}
+        </select>
+      </div>
+      {tampil.length === 0 ? (
+        <p>Tidak ada item yang cocok.</p>
+      ) : (
+        <div className="daftar-kartu">
+          {tampil.map((item) => (
+            <KartuItem key={item.id} item={item} />
+          ))}
+        </div>
+      )}
+    </section>
+  )
 }
