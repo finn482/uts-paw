@@ -6,7 +6,7 @@ Kelas: RA
 Tema: Direktori Kuliner Sekitar Kampus  
 Deployment: https://finn482.github.io/uts-paw/
 
-![Tangkapan layar beranda](docs/beranda.png)
+![Tangkapan layar beranda](app/docs/beranda.png)
 
 ## Deskripsi Aplikasi
 
