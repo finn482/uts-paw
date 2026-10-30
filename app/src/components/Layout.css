@@ -2,42 +2,73 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: #0a1128;
+  background: #f4f7fb;
 }
 
 .kepala {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 6%;
+  color: #fefcfb;
+  background: linear-gradient(135deg, #001f54, #034078);
+  box-shadow: 0 4px 12px rgb(10 17 40 / 18%);
+}
+
+.kepala strong {
+  color: #fefcfb;
+  font-size: 1.2rem;
 }
 
 .menu {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
+.menu a {
+  padding: 8px 12px;
+  color: #fefcfb;
+  border-radius: 8px;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.menu a:hover,
 .menu a.active {
-  font-weight: 600;
+  color: #001f54;
+  background: #1282a2;
+  text-decoration: none;
+}
+
+.menu a:focus-visible {
+  outline: 3px solid #fefcfb;
+  outline-offset: 3px;
 }
 
 .isi {
   flex: 1;
-  width: 100%;
-  max-width: 960px;
+  width: min(100% - 32px, 1100px);
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 32px 0 48px;
 }
 
 .kaki {
-  padding: 1rem 1.5rem;
-  border-top: 1px solid #dcdcdc;
-  color: #57606a;
+  padding: 20px 6%;
+  color: #fefcfb;
+  background: #0a1128;
+  border-top: 3px solid #1282a2;
   font-size: 0.9rem;
 }
 
 .aksi {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -64,18 +95,32 @@
 
 .kartu {
   padding: 1rem;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
+  background: #fefcfb;
+  border: 1px solid #1282a2;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(10 17 40 / 8%);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.kartu:hover {
+  box-shadow: 0 8px 18px rgb(10 17 40 / 15%);
+  transform: translateY(-3px);
 }
 
 .kartu h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.kartu h3 a {
+  color: #001f54;
 }
 
 .kartu p {
-  margin: 0;
-  color: #57606a;
+  margin: 0.5rem 0;
+  color: #0a1128;
 }
 
 .alat-koleksi {
@@ -87,19 +132,55 @@
 
 .alat-koleksi input,
 .alat-koleksi select {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
+  padding: 0.65rem 0.8rem;
+  color: #0a1128;
+  background: #fefcfb;
+  border: 1px solid #1282a2;
+  border-radius: 8px;
   font: inherit;
+}
+
+.alat-koleksi input:focus,
+.alat-koleksi select:focus {
+  outline: 3px solid rgb(18 130 162 / 25%);
+  border-color: #034078;
 }
 
 @media (max-width: 768px) {
   .kepala {
+    align-items: flex-start;
     flex-direction: column;
-    gap: 0.5rem;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu a {
+    flex: 1;
+    text-align: center;
+  }
+
+  .daftar-kartu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .isi {
+    width: min(100% - 20px, 1100px);
+    padding-top: 20px;
   }
 
   .daftar-kartu {
     grid-template-columns: 1fr;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu a {
+    flex: none;
   }
 }

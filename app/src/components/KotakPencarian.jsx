@@ -7,5 +7,5 @@ export default function KotakPencarian({ nilai, onUbah }) {
       value={nilai}
       onChange={(e) => onUbah(e.target.value)}
     />
-  )
+  );
 }
