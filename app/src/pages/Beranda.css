@@ -1,0 +1,125 @@
+#beranda-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #0a1128;
+  background: #fefcfb;
+}
+
+#beranda-title {
+  margin-bottom: 8px;
+  color: #fefcfb;
+  font-size: 2rem;
+}
+
+.beranda-hero {
+  position: relative;
+  padding: 32px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  color: #fefcfb;
+  background: linear-gradient(135deg, #001f54, #034078);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgb(10 17 40 / 18%);
+}
+
+.beranda-hero::before {
+  position: absolute;
+  right: -35px;
+  bottom: -45px;
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: rgb(18 130 162 / 35%);
+  border-radius: 50%;
+}
+
+.beranda-hero h1 {
+  position: relative;
+  margin: 0 0 12px;
+  color: #fefcfb;
+}
+
+.beranda-hero p {
+  position: relative;
+  max-width: 620px;
+  margin: 8px 0;
+  color: #fefcfb;
+}
+
+.beranda-theme {
+  padding: 16px;
+  color: #001f54;
+  background: #fefcfb;
+  border-left: 4px solid #1282a2;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(10 17 40 / 8%);
+}
+
+.beranda-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.beranda-summary-card {
+  padding: 20px;
+  background: #fefcfb;
+  border: 1px solid #1282a2;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(10 17 40 / 8%);
+}
+
+.beranda-summary-card strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #034078;
+  font-size: 1.8rem;
+}
+
+.beranda-summary-card span {
+  color: #0a1128;
+}
+
+.beranda-link {
+  display: inline-block;
+  padding: 11px 16px;
+  color: #fefcfb;
+  background: #1282a2;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.beranda-link:hover {
+  color: #fefcfb;
+  background: #034078;
+  transform: translateY(-2px);
+}
+
+.beranda-link:focus-visible {
+  outline: 3px solid #1282a2;
+  outline-offset: 3px;
+}
+
+.beranda-status {
+  margin: 16px 0;
+}
+
+@media (max-width: 600px) {
+  #beranda-page {
+    padding: 20px 12px;
+  }
+
+  .beranda-hero {
+    padding: 24px 20px;
+  }
+
+  .beranda-summary {
+    grid-template-columns: 1fr;
+  }
+}

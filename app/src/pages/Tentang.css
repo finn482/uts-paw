@@ -1,0 +1,122 @@
+#tentang-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #0a1128;
+}
+
+.tentang-card {
+  position: relative;
+  padding: 32px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #001f54, #034078);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgb(10 17 40 / 18%);
+}
+
+.tentang-card::before {
+  position: absolute;
+  right: -40px;
+  bottom: -50px;
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: rgb(18 130 162 / 35%);
+  border-radius: 50%;
+}
+
+.tentang-card h1 {
+  position: relative;
+  margin: 0 0 24px;
+  color: #fefcfb;
+  font-size: 2rem;
+}
+
+.tentang-card p {
+  position: relative;
+  color: #fefcfb;
+  line-height: 1.6;
+}
+
+.tentang-info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  margin: 24px 0;
+  overflow: hidden;
+  background: #fefcfb;
+  border: 1px solid #1282a2;
+  border-radius: 12px;
+}
+
+.tentang-info dt,
+.tentang-info dd {
+  padding: 14px 16px;
+  margin: 0;
+  border-bottom: 1px solid rgb(18 130 162 / 30%);
+}
+
+.tentang-info dt {
+  color: #001f54;
+  background: rgb(18 130 162 / 12%);
+  font-weight: 700;
+}
+
+.tentang-info dd {
+  color: #0a1128;
+  background: #fefcfb;
+}
+
+.tentang-link {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fefcfb;
+  background: #1282a2;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.tentang-link:hover {
+  color: #fefcfb;
+  background: #0a1128;
+  transform: translateY(-2px);
+}
+
+.tentang-link:focus-visible {
+  outline: 3px solid #fefcfb;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  #tentang-page {
+    padding: 20px 12px;
+  }
+
+  .tentang-card {
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  .tentang-info {
+    display: block;
+  }
+
+  .tentang-info dt {
+    padding-bottom: 6px;
+    border-bottom: 0;
+  }
+
+  .tentang-info dd {
+    padding-top: 6px;
+  }
+
+  .tentang-link {
+    width: 100%;
+    text-align: center;
+  }
+}

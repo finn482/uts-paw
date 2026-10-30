@@ -1,0 +1,90 @@
+#not-found-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 32px 20px;
+  color: #0a1128;
+}
+
+.not-found-card {
+  position: relative;
+  width: min(100%, 600px);
+  padding: 44px 32px;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(135deg, #001f54, #034078);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgb(10 17 40 / 18%);
+}
+
+.not-found-card::before {
+  position: absolute;
+  right: -45px;
+  bottom: -55px;
+  width: 160px;
+  height: 160px;
+  content: "";
+  background: rgb(18 130 162 / 35%);
+  border-radius: 50%;
+}
+
+.not-found-title {
+  position: relative;
+  margin: 0;
+  color: #fefcfb;
+  font-size: clamp(4rem, 12vw, 8rem);
+  line-height: 1;
+}
+
+.not-found-card p {
+  position: relative;
+  margin: 20px 0 28px;
+  color: #fefcfb;
+  font-size: 1.1rem;
+}
+
+.not-found-link {
+  position: relative;
+  display: inline-block;
+  padding: 11px 18px;
+  color: #fefcfb;
+  background: #1282a2;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.not-found-link:hover {
+  color: #fefcfb;
+  background: #0a1128;
+  transform: translateY(-2px);
+}
+
+.not-found-link:focus-visible {
+  outline: 3px solid #fefcfb;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  #not-found-page {
+    min-height: 50vh;
+    padding: 20px 12px;
+  }
+
+  .not-found-card {
+    padding: 36px 20px;
+    border-radius: 12px;
+  }
+
+  .not-found-card p {
+    font-size: 1rem;
+  }
+
+  .not-found-link {
+    width: 100%;
+  }
+}

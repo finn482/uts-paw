@@ -1,42 +1,126 @@
 .formulir {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 480px;
+  width: min(100%, 640px);
+  max-width: 640px;
+  padding: 32px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #fefcfb;
+  background: linear-gradient(135deg, #001f54, #034078);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgb(10 17 40 / 18%);
+}
+
+.formulir::before {
+  position: absolute;
+  right: -40px;
+  bottom: -50px;
+  width: 160px;
+  height: 160px;
+  content: "";
+  background: rgb(18 130 162 / 35%);
+  border-radius: 50%;
+}
+
+.formulir h1 {
+  position: relative;
+  margin: 0 0 12px;
+  color: #fefcfb;
+  font-size: 2rem;
 }
 
 .formulir label {
+  position: relative;
   margin-top: 0.75rem;
-  font-weight: 600;
+  color: #fefcfb;
+  font-weight: 700;
 }
 
 .formulir input,
 .formulir select {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
+  position: relative;
+  width: 100%;
+  padding: 11px 13px;
+  color: #0a1128;
+  background: #fefcfb;
+  border: 2px solid #1282a2;
+  border-radius: 8px;
   font: inherit;
 }
 
-.formulir [role='alert'] {
-  margin: 0;
-  color: #b42318;
+.formulir input:focus,
+.formulir select:focus {
+  outline: 3px solid rgb(18 130 162 / 35%);
+  border-color: #fefcfb;
+}
+
+.formulir [role="alert"] {
+  position: relative;
+  padding: 11px 13px;
+  margin: 8px 0 0;
+  color: #001f54;
+  background: #fefcfb;
+  border-left: 4px solid #1282a2;
+  border-radius: 8px;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .formulir button {
+  position: relative;
   align-self: flex-start;
   margin-top: 1rem;
-  padding: 0.6rem 1.5rem;
+  padding: 11px 18px;
+  color: #fefcfb;
+  background: #1282a2;
   border: 0;
-  border-radius: 6px;
-  background: #1f2328;
-  color: #fff;
+  border-radius: 8px;
   font: inherit;
+  font-weight: 700;
   cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-@media (max-width: 480px) {
+.formulir button:hover {
+  color: #fefcfb;
+  background: #0a1128;
+  transform: translateY(-2px);
+}
+
+.formulir button:focus-visible {
+  outline: 3px solid #fefcfb;
+  outline-offset: 3px;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.field label {
+  margin-top: 0;
+}
+
+.field input,
+.field select {
+  padding: 11px 13px;
+}
+
+@media (max-width: 600px) {
+  .formulir {
+    width: 100%;
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
   .formulir button {
     align-self: stretch;
   }
