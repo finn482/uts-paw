@@ -1,3 +1,3 @@
-import { createContext } from 'react'
+import { createContext } from "react";
 
-export const KoleksiContext = createContext(null)
+export const KoleksiContext = createContext(null);

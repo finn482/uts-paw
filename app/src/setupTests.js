@@ -1,11 +1,11 @@
-import '@testing-library/jest-dom/vitest'
-import { cleanup } from '@testing-library/react'
-import { afterEach } from 'vitest'
+import "@testing-library/jest-dom/vitest";
+import { cleanup } from "@testing-library/react";
+import { afterEach } from "vitest";
 
 afterEach(() => {
-  cleanup()
-  localStorage.clear()
-})
+  cleanup();
+  localStorage.clear();
+});
 
 // jsdom tidak punya matchMedia; beberapa pustaka UI (mis. antd) membutuhkannya.
 if (!window.matchMedia) {
@@ -18,5 +18,5 @@ if (!window.matchMedia) {
     addEventListener() {},
     removeEventListener() {},
     dispatchEvent: () => false,
-  })
+  });
 }
